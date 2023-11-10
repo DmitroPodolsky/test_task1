@@ -45,10 +45,9 @@ pip install -r requirements.txt
 ```
 
 #### Step 5: Run your device
-Execute the following command:
-```
+
 on android studio run your emulator android, or connect your android device to computer
-```
+
 
 #### Step 6: Download the Ajax Security System app
 you can it download from play market or from site https://apkpure.com/ajax-security-system/com.ajaxsystems/download?utm_content=1008 apk file, after that use command:
@@ -73,10 +72,9 @@ poetry install
 ```
 
 #### Step 5: Run your device
-Execute the following command:
-```
+
 on android studio run your emulator android, or connect your android device to computer
-```
+
 
 #### Step 6: Download the Ajax Security System app
 you can it download from play market or from site https://apkpure.com/ajax-security-system/com.ajaxsystems/download?utm_content=1008 apk file, after that use command:
