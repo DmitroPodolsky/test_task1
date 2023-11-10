@@ -50,7 +50,13 @@ Execute the following command:
 on android studio run your emulator android, or connect your android device to computer
 ```
 
-#### Step 6: Run the tests
+#### Step 6: Download the Ajax Security System app
+you can it download from play market or from site https://apkpure.com/ajax-security-system/com.ajaxsystems/download?utm_content=1008 apk file, after that use command:
+```
+adb install your_path_to_apk_file
+```
+
+#### Step 7: Run the tests
 Execute the following command:
 ```
 pytest tests
@@ -72,7 +78,13 @@ Execute the following command:
 on android studio run your emulator android, or connect your android device to computer
 ```
 
-#### Step 6: Run the tests
+#### Step 6: Download the Ajax Security System app
+you can it download from play market or from site https://apkpure.com/ajax-security-system/com.ajaxsystems/download?utm_content=1008 apk file, after that use command:
+```
+adb install your_path_to_apk_file
+```
+
+#### Step 7: Run the tests
 Execute the following command:
 ```
 poetry run pytest tests
