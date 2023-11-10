@@ -44,7 +44,7 @@ Execute the following command:
 on android studio run your emulator android, or connect your android device to computer
 ```
 
-#### Step 5: Run the bot
+#### Step 5: Run the tests
 Execute the following command:
 ```
 pytest tests
@@ -66,7 +66,7 @@ Execute the following command:
 on android studio run your emulator android, or connect your android device to computer
 ```
 
-#### Step 5: Run the bot
+#### Step 5: Run the tests
 Execute the following command:
 ```
 poetry run pytest tests
