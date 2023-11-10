@@ -30,21 +30,27 @@ Execute the following command:
 cd test_task1
 ```
 
+#### Step 3: Set enviroment variables
+Execute the following command:
+```
+Create a new .env file and transfer the keys from the existing .env.example file. 
+```
+
 ### Method 1: Using pip
 
-#### Step 3: Install required packages
+#### Step 4: Install required packages
 Execute the following command:
 ```
 pip install -r requirements.txt
 ```
 
-#### Step 4: Run your device
+#### Step 5: Run your device
 Execute the following command:
 ```
 on android studio run your emulator android, or connect your android device to computer
 ```
 
-#### Step 5: Run the tests
+#### Step 6: Run the tests
 Execute the following command:
 ```
 pytest tests
@@ -54,19 +60,19 @@ pytest tests
 
 ### Method 2: Using poetry
 
-#### Step 3: Install the project and dependencies
+#### Step 4: Install the project and dependencies
 Execute the following command:
 ```
 poetry install
 ```
 
-#### Step 4: Run your device
+#### Step 5: Run your device
 Execute the following command:
 ```
 on android studio run your emulator android, or connect your android device to computer
 ```
 
-#### Step 5: Run the tests
+#### Step 6: Run the tests
 Execute the following command:
 ```
 poetry run pytest tests
