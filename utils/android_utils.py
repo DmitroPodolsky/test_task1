@@ -1,9 +1,10 @@
 import subprocess
 from typing import List
 from typing import Optional
-
 from appium.options.android import UiAutomator2Options
 from loguru import logger
+
+from utils.config import settings
 
 
 def get_connected_devices() -> Optional[List[str]]:
@@ -44,7 +45,7 @@ def android_get_options_capabilities() -> UiAutomator2Options:
         newCommandTimeout=500,
         noSign=True,
         platformName="Android",
-        platformVersion="9",
+        platformVersion=settings.ANDROID_VERSION,
         resetKeyboard=True,
         systemPort=8301,
         takesScreenshot=True,
