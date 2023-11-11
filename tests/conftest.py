@@ -3,6 +3,7 @@ import time
 
 import pytest
 from appium import webdriver
+from appium.webdriver.webdriver import WebDriver
 from loguru import logger
 
 from utils.android_utils import android_get_options_capabilities
@@ -24,7 +25,7 @@ def run_appium_server():
 
 
 @pytest.fixture()
-def driver(run_appium_server):
+def driver(run_appium_server) -> WebDriver:
     logger.info("setting up the driver...")
     driver = webdriver.Remote(
         settings.APPIUM_SERVER_URL, options=android_get_options_capabilities()

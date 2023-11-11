@@ -32,7 +32,7 @@ cd test_task1
 
 #### Step 3: Set enviroment variables
 
-Create a new .env file and transfer the keys from the existing .env.example file. 
+Create a new .env file and transfer the keys from the existing .env.example file.
 
 
 ### Method 1: Using pip

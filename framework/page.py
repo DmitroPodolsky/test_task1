@@ -1,10 +1,12 @@
 from appium.webdriver.common.appiumby import AppiumBy
+from appium.webdriver.webdriver import WebDriver
 from appium.webdriver.webelement import WebElement
 
 
 class Page:
-    '''Base class for all pages in the app'''
-    def __init__(self, driver):
+    """Base class for all pages in the app"""
+
+    def __init__(self, driver: WebDriver):
         self.driver = driver
 
     def click_element(self, element: WebElement):
@@ -16,3 +18,8 @@ class Page:
 
     def send_keys_to_element(self, element: WebElement, text: str):
         element.send_keys(text)
+
+    def find_and_click(self, xpath: str):
+        element = self.find_element(xpath)
+        self.click_element(element)
+        return element

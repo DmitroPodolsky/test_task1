@@ -7,7 +7,7 @@ from loguru import logger
 
 
 def get_connected_devices() -> Optional[List[str]]:
-    '''Returns a list of connected devices'''
+    """Returns a list of connected devices"""
     try:
         # Run the adb devices command to get the list of connected devices
         result = subprocess.run(
@@ -28,7 +28,7 @@ def get_connected_devices() -> Optional[List[str]]:
 
 
 def get_device_udid() -> Optional[str]:
-    '''Returns the udid of the first connected device'''
+    """Returns the udid of the first connected device"""
     devices = get_connected_devices()
     if devices:
         return devices[0]
@@ -37,7 +37,7 @@ def get_device_udid() -> Optional[str]:
 
 
 def android_get_options_capabilities() -> UiAutomator2Options:
-    '''Returns the options and capabilities for the Android driver'''
+    """Returns the options and capabilities for the Android driver"""
     capabilities = dict(
         autoGrantPermissions=True,
         automationName="uiautomator2",
