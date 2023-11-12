@@ -21,7 +21,7 @@ def is_user_logged_in(user_login_fixture: LoginPage) -> bool:
 @pytest.mark.parametrize(
     "email, password", [(settings.USER_EMAIL, settings.USER_PASSWORD)]
 )
-def test_user_login_success(user_login_fixture: LoginPage, email: str, password: str):
+def test_user_login_success(user_login_fixture: LoginPage, email: str, password: str) -> None:
     user_login_fixture.find_and_click(
         '(//androidx.compose.ui.platform.ComposeView[@resource-id="com.ajaxsystems:id/compose_view"])[1]/android.view.View/android.view.View/android.widget.Button'
     )
@@ -45,7 +45,7 @@ def test_user_login_success(user_login_fixture: LoginPage, email: str, password:
 
 
 @pytest.mark.parametrize("email, password", [(settings.USER_EMAIL, "1")])
-def test_user_login_failure(user_login_fixture: LoginPage, email: str, password: str):
+def test_user_login_failure(user_login_fixture: LoginPage, email: str, password: str) -> None:
     user_login_fixture.find_and_click(
         '(//androidx.compose.ui.platform.ComposeView[@resource-id="com.ajaxsystems:id/compose_view"])[1]/android.view.View/android.view.View/android.widget.Button'
     )

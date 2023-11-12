@@ -11,7 +11,7 @@ from utils.config import settings
 
 
 @pytest.fixture()
-def run_appium_server():
+def run_appium_server() -> None:
     logger.info("setting up the server...")
     subprocess.Popen(
         ["appium", "-a", "0.0.0.0", "-p", "4723", "--allow-insecure", "adb_shell"],
