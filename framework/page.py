@@ -19,7 +19,8 @@ class Page:
     def send_keys_to_element(self, element: WebElement, text: str) -> None:
         element.send_keys(text)
 
-    def find_and_click(self, xpath: str) -> None:
+    def find_and_click(self, xpath: str) -> WebElement:
         element = self.find_element(xpath)
         self.click_element(element)
+        return element
 
