@@ -1,6 +1,7 @@
 import subprocess
 from typing import List
 from typing import Optional
+
 from appium.options.android import UiAutomator2Options
 from loguru import logger
 

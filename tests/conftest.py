@@ -32,3 +32,4 @@ def driver(run_appium_server) -> WebDriver:
     )
     logger.success("driver is ready")
     yield driver
+    driver.quit()
